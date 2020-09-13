@@ -28,7 +28,7 @@ export async function getServerSideProps({ req, res }) {
       Location: '/api/login',
     })
     res.end()
-    return
+    return {}
   }
 
   return { props: { user: session.user } }
